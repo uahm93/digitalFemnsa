@@ -78,7 +78,7 @@ export default function AlertDialog() {
             id="outlined-basic"
             label="Contraseña"
             variant="outlined"
-            onChange={(e) => setPassword(event.target.value.toLowerCase())}
+            onChange={(e: any) => setPassword(e?.target?.value?.toLowerCase())}
             sx={{ mt: "10px" }}
           />
           <Button

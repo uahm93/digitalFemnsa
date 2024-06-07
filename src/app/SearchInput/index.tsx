@@ -20,7 +20,7 @@ const SearchInput: FC<ISearchInput> = ({ setInput, handleSearch}) => {
         className={styles.input}
         placeholder="Buscar un articulo"
         inputProps={{ 'aria-label': 'Buscar un articulo' }}
-        onChange={(e) => setInput(event.target.value)}
+        onChange={(e) => setInput(e?.target.value)}
       />
       <IconButton type="button" className={styles.button} aria-label="search" onClick={() => handleSearch()} >
         <SearchIcon />

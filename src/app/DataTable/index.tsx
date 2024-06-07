@@ -17,6 +17,10 @@ import { handleGetProducts } from '../Repository'
 import { filterProductsByInput, filterProductsByCategory } from '../utils'
 
 type IProducts = {
+  push(arg0: { title: string; totalProducts: any; totalPrice: any; }): unknown;
+  length: number;
+  map(arg0: (row: any) => import("react").JSX.Element): import("react").ReactNode;
+  reduce: any;
   [index: number]:
   {
     title: string;
