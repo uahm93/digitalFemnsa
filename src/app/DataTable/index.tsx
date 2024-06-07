@@ -56,7 +56,7 @@ const CustomTable = () => {
     const filtered = category 
     ? filterProductsByCategory(categoryList, input) 
     : filterProductsByInput(products, input);
-    
+
     setProductsSearched(filtered)
   }
 
@@ -111,7 +111,7 @@ const CustomTable = () => {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                { HEADER[category].map((index) => <TableCell>{index}</TableCell>) }
+                { HEADER[category].map((index) => <TableCell key={index} >{index}</TableCell>) }
               </TableRow>
             </TableHead>
             <TableBody>
